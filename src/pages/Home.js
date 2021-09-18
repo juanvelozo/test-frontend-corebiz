@@ -1,5 +1,13 @@
 import React from "react";
+import { Carousel } from "../components/Carousel/Carousel";
+import { FeaturesProducts } from "../components/FeaturedProducts/FeaturesProducts";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div className="h-height">
+      <Carousel />
+
+      <FeaturesProducts />
+    </div>
+  );
 };
