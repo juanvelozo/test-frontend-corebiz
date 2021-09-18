@@ -4,7 +4,7 @@ import { FeaturesProducts } from "../components/FeaturedProducts/FeaturesProduct
 
 export const Home = () => {
   return (
-    <div className="h-height">
+    <div className="h-height w-auto">
       <Carousel />
 
       <FeaturesProducts />

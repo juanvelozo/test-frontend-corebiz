@@ -2,14 +2,14 @@ import React from "react";
 
 export const ProductCard = () => {
   return (
-    <div className="p-10">
+    <div className="lg:p-10 p-2">
       <div className="flex items-center justify-center">
-        <div className=" w-60 h-auto bg-white overflow-hidden duration-500 transform transition cursor-pointer hover:bg-custom-gray-2">
+        <div className="w-60 h-auto bg-white overflow-hidden duration-500 transform transition  hover:bg-custom-gray-2">
           <img
             src="https://images.unsplash.com/photo-1577982787983-e07c6730f2d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=859&q=80"
             alt="img"
           />
-          <div className="p-4 text-center">
+          <div className="p-4 text-center mobile:flex mobile:flex-col mobile:justify-center mobile:items-center">
             <h1 className="text-xs font-bold uppercase text-custom-gray-6">
               zapato flotador negro
             </h1>
