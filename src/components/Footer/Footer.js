@@ -8,35 +8,35 @@ export const Footer = () => {
   return (
     <>
       <NewsLetter />
-      <div className="top-0 w-full h-52  bg-black text-white font-nunito ">
-        <div className="flex justify-around ">
-          <div className="flex flex-col items-center">
-            <div>
-              <h1>Ubicacion</h1>
-              <h1>Avenida Andrômeda, 2000. Bloco 6 e 8 </h1>
-              <h1>Alphavile SP</h1>
-              <h1>brasil@corebiz.ag </h1>
-              <h1>+55 11 3090 1039</h1>
-            </div>
+      <div className="top-0 h-52  bg-black text-white font-nunito flex justify-center items-center">
+        <div className="flex justify-around w-full">
+          <div className="flex flex-col m-10">
+            <h1 className="text-lg">Ubicación</h1>
+            <h1 className="text-xs my-1">
+              Avenida Andrômeda, 2000. Bloco 6 e 8{" "}
+            </h1>
+            <h1 className="text-xs my-1">Alphavile SP</h1>
+            <h1 className="text-xs my-1">brasil@corebiz.ag </h1>
+            <h1 className="text-xs my-1">+55 11 3090 1039</h1>
           </div>
-          <div className="flex flex-col justify-around items-center">
-            <button className="bg-white text-black rounded-md uppercase flex items-center justify-evenly w-56 h-8 text-center">
+          <div className="flex flex-col justify-center items-center text-sm">
+            <button className="bg-white text-black font-bold rounded-md uppercase flex items-center justify-evenly w-60 h-10 text-center my-2">
               <MdEmail />
               contáctanos
             </button>
-            <button className="bg-white text-black rounded-md uppercase flex items-center justify-evenly w-56 h-8 text-center">
+            <button className="bg-white text-black font-bold rounded-md uppercase flex items-center justify-evenly w-60 h-10 text-center my-2">
               <MdHeadsetMic />
-              contáctanos
+              habla con un consultor
             </button>
           </div>
-          <div className="flex">
-            <div>
+          <div className="flex justify-center items-center">
+            <div className="m-2">
               <h1>Desarrollado por</h1>
-              <LogoWhite className="w-20 h-8 " />
+              <LogoWhite />
             </div>
-            <div>
+            <div className="m-2">
               <h1>Powered by</h1>
-              <Vtex className="w-20 h-8  " />
+              <Vtex />
             </div>
           </div>
         </div>
