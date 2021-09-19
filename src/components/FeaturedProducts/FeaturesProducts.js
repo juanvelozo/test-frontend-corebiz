@@ -2,7 +2,7 @@ import React from "react";
 import { ProductCard } from "../ProductCard/ProductCard";
 import Slider from "react-slick";
 
-export const FeaturesProducts = () => {
+export const FeaturesProducts = ({ product }) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -13,25 +13,22 @@ export const FeaturesProducts = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 426,
+        breakpoint: 550,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          dots: true,
         },
       },
     ],
   };
   return (
     <div className="h-auto font-nunito ">
-      <div className="lg:p-10 p-3">
+      <div className="lg:p-10 p-4">
         <h1 className="font-bold text-xl ">Más vendidos</h1>
         <Slider {...settings}>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {product.map((product) => {
+            return <ProductCard key={product.productId} data={product} />;
+          })}
         </Slider>
       </div>
     </div>

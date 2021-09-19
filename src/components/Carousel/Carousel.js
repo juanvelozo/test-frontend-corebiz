@@ -21,7 +21,7 @@ export const Carousel = () => {
       </div>
       <div className="lg:w-6/12 flex w-auto">
         <img
-          src="https://pixabay.com/get/g0bd4d20cb9246b811f5e656eae54a9052cf66bfde1c97168fd774b3b96dad5e638bfa4fe1278f9648fd2540900116f78_1920.jpg"
+          src="https://cdn.pixabay.com/photo/2017/08/07/19/45/ecommerce-2607114_960_720.jpg"
           alt="img"
           className="bg-contain bg-no-repeat h-full"
         />
