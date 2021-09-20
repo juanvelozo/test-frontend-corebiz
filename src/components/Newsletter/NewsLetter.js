@@ -1,6 +1,4 @@
 import React, { useContext, useState } from "react";
-import { AiOutlineCheck } from "react-icons/ai";
-import { IoAlertOutline } from "react-icons/io5";
 import { NewsLetterContext } from "../../services/NewsLetter/Context";
 import mailService from "../../services/NewsLetter/services";
 
@@ -49,27 +47,14 @@ export const NewsLetter = () => {
         />
         <button
           type="submit"
-          className="bg-black rounded-md text-sm font-lato font-semibold text-white p-3"
+          className={
+            user.auth
+              ? "bg-green-800 rounded-md text-sm font-lato font-semibold text-white p-3 cursor-not-allowed"
+              : "bg-black rounded-md text-sm font-lato font-semibold text-white p-3"
+          }
         >
-          Suscribirme
+          {user.auth ? "¡Suscripto exitosamente!" : "Suscribirme"}
         </button>
-        {user.auth ? (
-          <h1 className="text-green-800 flex justify-center items-center font-bold font-lato  delay-150   transition-opacity duration-1000 ease-out opacity-0">
-            <AiOutlineCheck />
-            ¡Suscripto exitosamente!
-          </h1>
-        ) : (
-          <h1
-            className={
-              !user.auth
-                ? "hidden"
-                : "text-custom-red flex justify-center items-center font-bold font-lato animate-alert"
-            }
-          >
-            <IoAlertOutline />
-            Hubo un error al suscribirse.
-          </h1>
-        )}
       </form>
     </div>
   );

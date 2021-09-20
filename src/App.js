@@ -1,4 +1,7 @@
 import { useEffect, useReducer } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import CartContextProvider from "./services/Cart/CartContext";
+
 import { DashboardRoutes } from "./Router/DashboardRouter";
 import { NewsLetterContext } from "./services/NewsLetter/Context";
 import { Reducer } from "./services/NewsLetter/useReducer";
@@ -13,7 +16,11 @@ function App() {
   }, [user]);
   return (
     <NewsLetterContext.Provider value={{ user, dispatch }}>
-      <DashboardRoutes />
+      <CartContextProvider>
+        <Router>
+          <DashboardRoutes />
+        </Router>
+      </CartContextProvider>
     </NewsLetterContext.Provider>
   );
 }

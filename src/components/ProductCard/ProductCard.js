@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { CartContext } from "../../services/Cart/CartContext";
 
 export const ProductCard = ({ data }) => {
+  const { addProduct } = useContext(CartContext);
   return (
     <div className="lg:p-4 p-2">
       <div className="flex items-center justify-center">
@@ -41,7 +43,10 @@ export const ProductCard = ({ data }) => {
             <h1 className="text-xs font-bold uppercase text-custom-gray-6">
               o en {data.installments.quantity}x de R ${data.installments.value}
             </h1>
-            <button className="bg-black py-2 px-8 m-2 rounded-md text-white">
+            <button
+              className="bg-black py-2 px-8 m-2 rounded-md text-white"
+              onClick={() => addProduct(data)}
+            >
               Comprar
             </button>
           </div>

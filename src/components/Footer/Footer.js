@@ -1,6 +1,5 @@
 import React from "react";
 import { MdEmail, MdHeadsetMic } from "react-icons/md";
-import { ReactComponent as LogoWhite } from "../../static/logoWhite.svg";
 import { ReactComponent as Vtex } from "../../static/Vtex.svg";
 import { NewsLetter } from "../Newsletter/NewsLetter";
 
@@ -34,7 +33,7 @@ export const Footer = () => {
           <div className="flex justify-between items-start mx-4 ">
             <div>
               <h1>Desarrollado por</h1>
-              <LogoWhite />
+              <img src="../../static/Logo.png" alt="png" />
             </div>
             <div>
               <h1>Powered by</h1>

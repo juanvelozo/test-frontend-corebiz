@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Search } from "./Search";
-import { ReactComponent as LogoBlack } from "../../static/logoBlack.svg";
+import { ReactComponent as Logo } from "../../static/Logo.svg";
 import { FaRegUser } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
@@ -24,7 +24,7 @@ export const NavBar = () => {
 
         {/* NavBar */}
         <div className="transform scale-150">
-          <LogoBlack />
+          <Logo />
         </div>
         <div className="hidden md:flex">
           <Search />
