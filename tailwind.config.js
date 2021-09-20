@@ -3,6 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      keyframes: {
+        alert: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "50" },
+        },
+      },
       screens: {
         mobile: { max: "767px" },
       },

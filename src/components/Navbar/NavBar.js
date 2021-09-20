@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Search } from "./Search";
 import { ReactComponent as LogoBlack } from "../../static/logoBlack.svg";
-import { Chart } from "../Chart/Chart";
 import { FaRegUser } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
+import { Cart } from "../Cart/Cart";
 
 export const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -34,7 +34,7 @@ export const NavBar = () => {
             <FaRegUser />
             <p>Mi cuenta</p>
           </button>
-          <Chart />
+          <Cart />
         </div>
       </div>
       <div className="md:hidden flex m-5">
